@@ -1,0 +1,42 @@
+[
+  {
+      "model": "capstoneapi.resource",
+      "pk": 1,
+      "fields": {
+          "category": 1,
+          "content": "Spanish Translator",
+          "url": "https://www.spanishdict.com/translation",
+          "submitter": 1
+      }
+  },
+  {
+      "model": "capstoneapi.resource",
+      "pk": 2,
+      "fields": {
+        "category": 2,
+        "content": "Guide to filling out FAFSA",
+        "url": "https://studentaid.gov/apply-for-aid/fafsa/filling-out",
+        "submitter": 1
+    }
+  },
+  {
+      "model": "capstoneapi.resource",
+      "pk": 3,
+      "fields": {
+        "category": 3,
+        "content": "TN permit test flash cards",
+        "url": "https://quizlet.com/11828950/tennessee-permit-test-flash-cards/",
+        "submitter": 1
+    }
+  },
+  {
+      "model": "capstoneapi.resource",
+      "pk": 4,
+      "fields": {
+        "category": 4,
+        "content": "MNPS District Calendar",
+        "url": "https://www.mnps.org/district-calendar",
+        "submitter": 1
+    }
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+      "model": "capstoneapi.resourcecategory",
+      "pk": 1,
+      "fields": {
+          "label": "School Subjects"
+      }
+  },
+  {
+      "model": "capstoneapi.resourcecategory",
+      "pk": 2,
+      "fields": {
+          "label": "College"
+      }
+  },
+  {
+      "model": "capstoneapi.resourcecategory",
+      "pk": 3,
+      "fields": {
+          "label": "Life Skills"
+      }
+  },
+  {
+      "model": "capstoneapi.resourcecategory",
+      "pk": 4,
+      "fields": {
+          "label": "High School"
+      }
+  }
+]

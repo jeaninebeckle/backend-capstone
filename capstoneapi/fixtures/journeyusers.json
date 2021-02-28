@@ -1,0 +1,10 @@
+[
+  {
+      "model": "capstoneapi.journeyuser",
+      "pk": 1,
+      "fields": {
+          "user": 1,
+          "display_name": "Vivian"
+      }
+  }
+]
