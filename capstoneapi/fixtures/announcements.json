@@ -1,9 +1,8 @@
 [
   {
-      "model": "capstoneapi.announcements",
+      "model": "capstoneapi.announcement",
       "pk": 1,
       "fields": {
-          "category": 1,
           "content": "May 25th is the last day of school for our students. Their exams start on May 20th and go through May 24th.",
           "date": "2021-02-27",
           "submitter": 1

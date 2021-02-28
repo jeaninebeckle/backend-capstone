@@ -1,6 +1,6 @@
 [
   {
-      "model": "capstoneapi.resources",
+      "model": "capstoneapi.resource",
       "pk": 1,
       "fields": {
           "category": 1,
@@ -10,7 +10,7 @@
       }
   },
   {
-      "model": "capstoneapi.resources",
+      "model": "capstoneapi.resource",
       "pk": 2,
       "fields": {
         "category": 2,
@@ -20,7 +20,7 @@
     }
   },
   {
-      "model": "capstoneapi.resources",
+      "model": "capstoneapi.resource",
       "pk": 3,
       "fields": {
         "category": 3,
@@ -30,7 +30,7 @@
     }
   },
   {
-      "model": "capstoneapi.resources",
+      "model": "capstoneapi.resource",
       "pk": 4,
       "fields": {
         "category": 4,
