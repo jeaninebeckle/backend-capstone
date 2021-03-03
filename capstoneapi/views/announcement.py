@@ -5,7 +5,7 @@ from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, permissions
 from rest_framework import status
-from capstoneapi.models import Announcement
+from capstoneapi.models import Announcement, JourneyUser
 
 class AnnouncementsViewSet(ViewSet):
   """Journey Announcements"""
@@ -36,6 +36,26 @@ class AnnouncementsViewSet(ViewSet):
     serializer = AnnouncementSerializer(
       announcements, many=True, context={'request': request})
     return Response(serializer.data)
+
+  def create(self, request):
+      """Handle POST operations
+
+      Returns:
+          response -- JSON serialized announcement instance
+      """
+
+      announcement = Announcement()
+      announcement.content = request.data["content"]
+      announcement.date = request.data["date"]
+      announcement.submitter = JourneyUser.objects.get(user=request.auth.user)
+
+      try:
+        announcement.save()
+        serializer = AnnouncementSerializer(announcement, context={'request': request})
+        return Response(serializer.data)
+      
+      except ValidationError as ex:
+        return Response({"reason": ex.message}, status=status.HTTP_400_BAD_REQUEST)
 
 class AnnouncementSerializer(serializers.ModelSerializer):
   """JSON Serializer for announcements
