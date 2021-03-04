@@ -3,12 +3,13 @@ from django.urls import path
 from django.contrib import admin
 from capstoneapi.views import login_user, register_user
 from rest_framework import routers
-from capstoneapi.views import AnnouncementsViewSet, UserViewSet
+from capstoneapi.views import AnnouncementsViewSet, UserViewSet, JourneyUserViewSet
 
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'announcements', AnnouncementsViewSet, 'announcement')
 router.register(r'users', UserViewSet, 'user')
+router.register(r'journeyusers', JourneyUserViewSet, 'journeyuser')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
