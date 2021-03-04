@@ -1,17 +1,16 @@
-from django.contrib.auth.models import User
 from rest_framework import viewsets, serializers
 from rest_framework.response import Response
 from django.http import HttpResponseServerError
 from capstoneapi.models import JourneyUser
 
-class UserSerializer(serializers.ModelSerializer):
+class JourneyUserSerializer(serializers.ModelSerializer):
     # JSON Serializer for User
     
     class Meta:
-        model = User
-        fields = ['id', 'username', 'first_name', 'last_name', 'email', 'is_staff', 'is_active', 'date_joined']
+        model = JourneyUser
+        fields = ['id', 'display_name']
 
-class UserViewSet(viewsets.ModelViewSet):
+class JourneyUserViewSet(viewsets.ModelViewSet):
     def retrieve(self, request, pk=None):
         """Handle GET requests for single user
 
@@ -19,8 +18,8 @@ class UserViewSet(viewsets.ModelViewSet):
         Response -- JSON serialized user
         """
         try:
-            user = User.objects.get(pk=pk)
-            serializer = UserSerializer(user, context={'request': request})
+            user = JourneyUser.objects.get(pk=pk)
+            serializer = JourneyUserSerializer(user, context={'request': request})
             return Response(serializer.data)
         except Exception as ex:
             return HttpResponseServerError(ex)
@@ -32,8 +31,8 @@ class UserViewSet(viewsets.ModelViewSet):
         Response -- JSON serialized list of users
         """
 
-        users = User.objects.all()
+        users = JourneyUser.objects.all()
 
-        serializer = UserSerializer(
+        serializer = JourneyUserSerializer(
         users, many=True, context={'request': request})
         return Response(serializer.data)
