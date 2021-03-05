@@ -3,3 +3,4 @@ from .auth import register_user
 from .announcement import AnnouncementsViewSet
 from .user import UserViewSet
 from .journeyuser import JourneyUserViewSet
+from .resource import ResourcesViewSet
