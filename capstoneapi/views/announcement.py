@@ -9,7 +9,6 @@ from capstoneapi.models import Announcement, JourneyUser
 
 class AnnouncementsViewSet(ViewSet):
   """Journey Announcements"""
-  # permission_classes = [permissions.IsAuthenticatedOrReadOnly, 'GET' ] 
 
   def retrieve(self, request, pk=None):
     """Handle GET requests for single announcement
