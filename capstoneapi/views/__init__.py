@@ -4,3 +4,4 @@ from .announcement import AnnouncementsViewSet
 from .user import UserViewSet
 from .journeyuser import JourneyUserViewSet
 from .resource import ResourcesViewSet
+from .resourcecategory import ResourceCategoryViewSet
