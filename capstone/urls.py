@@ -12,6 +12,7 @@ router.register(r'users', UserViewSet, 'user')
 router.register(r'journeyusers', JourneyUserViewSet, 'journeyuser')
 router.register(r'resources', ResourcesViewSet, 'resource')
 router.register(r'categories', ResourceCategoryViewSet, 'category')
+router.register(r'caltexts', CalTextViewSet, 'caltext')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
