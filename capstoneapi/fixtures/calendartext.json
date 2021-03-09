@@ -1,0 +1,10 @@
+[
+  {
+      "model": "capstoneapi.calendartext",
+      "pk": 1,
+      "fields": {
+          "content": "Placeholder text that we can change later and that LMV staff will have the ability to edit",
+          "name": "Intro text for tutoring calendar page"
+      }
+  }
+]
