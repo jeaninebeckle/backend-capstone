@@ -11,10 +11,10 @@ class CalTextViewSet(ViewSet):
   """Journey Calendar text"""
 
   def list(self, request):
-    """Handle GET requests to get all resources
+    """Handle GET requests to get calendar text
 
     Returns:
-      Response -- JSON serialized list of resources
+      Response -- JSON serialized calendar text
     """
 
     caltexts = CalendarText.objects.all()
@@ -23,35 +23,13 @@ class CalTextViewSet(ViewSet):
       caltexts, many=True, context={'request': request})
     return Response(serializer.data)
 
-  def create(self, request):
-      """Handle POST operations
-
-      Returns:
-          response -- JSON serialized resource instance
-      """
-
-      resource = Resource()
-      resource.content = request.data['content']
-      resource.url = request.data['url']
-      resource.category = ResourceCategory.objects.get(pk=request.data['categoryId'])
-      resource.submitter = JourneyUser.objects.get(user=request.auth.user)
-
-      try:
-        resource.save()
-        serializer = ResourceSerializer(resource, context={'request': request})
-        return Response(serializer.data)
-      
-      except ValidationError as ex:
-        return Response({"reason": ex.message}, status=status.HTTP_400_BAD_REQUEST)
-
-
-class ResourceSerializer(serializers.ModelSerializer):
-  """JSON Serializer for resources
+  
+class CalTextSerializer(serializers.ModelSerializer):
+  """JSON Serializer for calendar text
 
   Arguments:
     serializers
   """
   class Meta:
-    model = Resource
-    fields = ('id', 'category', 'url', 'content', 'submitter')
-    depth = 1
+    model = CalendarText
+    fields = ('id', 'content', 'name')

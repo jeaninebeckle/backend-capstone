@@ -3,7 +3,7 @@ from django.urls import path
 from django.contrib import admin
 from capstoneapi.views import login_user, register_user
 from rest_framework import routers
-from capstoneapi.views import AnnouncementsViewSet, UserViewSet, JourneyUserViewSet, ResourcesViewSet, ResourceCategoryViewSet
+from capstoneapi.views import AnnouncementsViewSet, UserViewSet, JourneyUserViewSet, ResourcesViewSet, ResourceCategoryViewSet, CalTextViewSet
 
 
 router = routers.DefaultRouter(trailing_slash=False)
