@@ -8,7 +8,8 @@ class JourneyUserSerializer(serializers.ModelSerializer):
     
     class Meta:
         model = JourneyUser
-        fields = ['id', 'display_name']
+        fields = ['id', 'display_name', 'user']
+        depth = 1
 
 class JourneyUserViewSet(viewsets.ModelViewSet):
     def retrieve(self, request, pk=None):
