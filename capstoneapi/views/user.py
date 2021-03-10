@@ -32,7 +32,7 @@ class UserViewSet(viewsets.ModelViewSet):
         Response -- JSON serialized list of users
         """
 
-        users = User.objects.all()
+        users = User.objects.all().order_by('-is_staff')
 
         serializer = UserSerializer(
         users, many=True, context={'request': request})
