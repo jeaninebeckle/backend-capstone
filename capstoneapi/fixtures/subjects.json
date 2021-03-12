@@ -1,0 +1,107 @@
+[
+  {
+    "model": "capstoneapi.subject",
+    "pk": 1,
+    "fields": {
+        "label": "Bridge Math / Math I (geometry, algebra 1)"
+    }
+  },
+  {
+    "model": "capstoneapi.subject",
+    "pk": 2,
+    "fields": {
+        "label": "Math II / III (algebra 2, pre-calc)"
+    }
+  },
+  {
+    "model": "capstoneapi.subject",
+    "pk": 3,
+    "fields": {
+        "label": "Statistics"
+    }
+  },
+  {
+    "model": "capstoneapi.subject",
+    "pk": 4,
+    "fields": {
+        "label": "Biology"
+    }
+  },
+  {
+    "model": "capstoneapi.subject",
+    "pk": 5,
+    "fields": {
+        "label": "Chemistry"
+    }
+  },
+  {
+    "model": "capstoneapi.subject",
+    "pk": 6,
+    "fields": {
+        "label": "Physics"
+    }
+  },
+  {
+    "model": "capstoneapi.subject",
+    "pk": 7,
+    "fields": {
+        "label": "Health Science / Lifetime Wellness"
+    }
+  },
+  {
+    "model": "capstoneapi.subject",
+    "pk": 8,
+    "fields": {
+        "label": "History / Government / Geography"
+    }
+  },
+  {
+    "model": "capstoneapi.subject",
+    "pk": 9,
+    "fields": {
+        "label": "English"
+    }
+  },
+  {
+    "model": "capstoneapi.subject",
+    "pk": 10,
+    "fields": {
+        "label": "Intro to Business / Marketing / Personal Finance"
+    }
+  },
+  {
+    "model": "capstoneapi.subject",
+    "pk": 11,
+    "fields": {
+        "label": "Spanish I"
+    }
+  },
+  {
+    "model": "capstoneapi.subject",
+    "pk": 12,
+    "fields": {
+        "label": "Spanish II"
+    }
+  },
+  {
+    "model": "capstoneapi.subject",
+    "pk": 13,
+    "fields": {
+        "label": "French"
+    }
+  },
+  {
+    "model": "capstoneapi.subject",
+    "pk": 14,
+    "fields": {
+        "label": "Engineering (HVAC, Elect., Plumbing)"
+    }
+  },
+  {
+    "model": "capstoneapi.subject",
+    "pk": 15,
+    "fields": {
+        "label": "Misc Humanities (Sociology, Psychology, Criminal Justice)"
+    }
+  }
+]
