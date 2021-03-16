@@ -18,6 +18,15 @@ class JourneyUserSerializer(serializers.ModelSerializer):
         model = JourneyUser
         fields = ['id', 'display_name', 'user', 'subjects']
 
+class JourneyUserListSerializer(serializers.ModelSerializer):
+    # JSON Serializer for User
+
+    user=UserSerializer(many=False)
+    class Meta:
+        model = JourneyUser
+        fields = ['id', 'display_name', 'user', 'subjects']
+        depth=1
+
 class JourneyUserViewSet(viewsets.ModelViewSet):
     def retrieve(self, request, pk=None):
         """Handle GET requests for single user
@@ -41,7 +50,7 @@ class JourneyUserViewSet(viewsets.ModelViewSet):
 
         users = JourneyUser.objects.all()
 
-        serializer = JourneyUserSerializer(
+        serializer = JourneyUserListSerializer(
         users, many=True, context={'request': request})
         return Response(serializer.data)
 
