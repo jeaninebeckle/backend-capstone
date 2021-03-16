@@ -6,3 +6,4 @@ from .journeyuser import JourneyUserViewSet
 from .resource import ResourcesViewSet
 from .resourcecategory import ResourceCategoryViewSet
 from .caltext import CalTextViewSet
+from .subject import SubjectViewSet

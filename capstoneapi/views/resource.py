@@ -14,7 +14,7 @@ class ResourcesViewSet(ViewSet):
     """Handle GET requests for single resource
 
     returns:
-      Response -- JSON serialized category
+      Response -- JSON serialized subject
     """
     try:
       resource = Resource.objects.get(pk=pk)
