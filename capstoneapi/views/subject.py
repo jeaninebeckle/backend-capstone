@@ -1,6 +1,7 @@
 """View module for handling requests about resources"""
 from django.core.exceptions import ValidationError
 from django.http import HttpResponseServerError
+from rest_framework.fields import IntegerField
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers
