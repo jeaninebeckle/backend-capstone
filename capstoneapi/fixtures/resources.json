@@ -46,7 +46,7 @@
       "category": 4,
       "content": "MNPS bus stop finder",
       "url": "https://findmystop.mnps.org/elinkrp/Students/BasicTransBoundarySearch.aspx",
-      "submitter": 2
+      "submitter": 1
     }
   },
   {
@@ -56,7 +56,7 @@
       "category": 2,
       "content": "Student FAFSA login",
       "url": "https://fafsa.ed.gov/spa/fafsa/#/LOGIN?locale=en_US",
-      "submitter": 2
+      "submitter": 1
     }
   },
   {
@@ -66,7 +66,7 @@
       "category": 2,
       "content": "Federal Student Aid ID",
       "url": "https://fsaid.ed.gov/npas/index.htm",
-      "submitter": 2
+      "submitter": 1
     }
   },
   {
@@ -76,7 +76,7 @@
       "category": 3,
       "content": "Nashville library link to DMV practice test resources",
       "url": "https://library.nashville.org/research/databases/driving-testsorg",
-      "submitter": 2
+      "submitter": 1
     }
   },
   {
@@ -86,7 +86,7 @@
       "category": 3,
       "content": "TN DMV permit practice tests and resources",
       "url": "https://nashvillepl.driving-tests.org/tennessee/",
-      "submitter": 2
+      "submitter": 1
     }
   },
   {
@@ -96,7 +96,7 @@
       "category": 3,
       "content": "TN Comprehensive driver license manual pdf",
       "url": "https://www.tn.gov/content/dam/tn/safety/documents/DL_Manual.pdf",
-      "submitter": 2
+      "submitter": 1
     }
   },
   {
@@ -106,7 +106,7 @@
       "category": 2,
       "content": "The Community Foundation scholarships",
       "url": "https://www.cfmt.org/grants-scholarships/scholarships/",
-      "submitter": 2
+      "submitter": 1
     }
   },
   {
@@ -116,7 +116,7 @@
       "category": 2,
       "content": "Tennessee Promise scholarship",
       "url": "https://www.tn.gov/tnpromise.html",
-      "submitter": 2
+      "submitter": 1
     }
   },
   {
@@ -126,7 +126,7 @@
       "category": 2,
       "content": "Apply to Nashville State",
       "url": "https://www.nscc.edu/admissions/apply",
-      "submitter": 2
+      "submitter": 1
     }
   },
   {
@@ -136,7 +136,7 @@
       "category": 1,
       "content": "Math flash cards",
       "url": "https://www.factmonster.com/math/flashcards",
-      "submitter": 2
+      "submitter": 1
     }
   }
 ]
