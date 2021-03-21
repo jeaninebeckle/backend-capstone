@@ -1,0 +1,10 @@
+[
+  {
+      "model": "capstoneapi.need",
+      "pk": 1,
+      "fields": {
+          "item": "Bicycle for a teenager",
+          "description": "One of our female students wants to apply for a part-time job, but she needs to obtain a method of transportation first."
+      }
+  }
+]

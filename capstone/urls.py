@@ -3,7 +3,7 @@ from django.urls import path
 from django.contrib import admin
 from capstoneapi.views import login_user, register_user
 from rest_framework import routers
-from capstoneapi.views import AnnouncementsViewSet, UserViewSet, JourneyUserViewSet, ResourcesViewSet, ResourceCategoryViewSet, CalTextViewSet, SubjectViewSet
+from capstoneapi.views import AnnouncementsViewSet, UserViewSet, JourneyUserViewSet, ResourcesViewSet, ResourceCategoryViewSet, CalTextViewSet, SubjectViewSet, NeedsViewSet
 
 
 router = routers.DefaultRouter(trailing_slash=False)
@@ -14,6 +14,7 @@ router.register(r'resources', ResourcesViewSet, 'resource')
 router.register(r'categories', ResourceCategoryViewSet, 'category')
 router.register(r'caltexts', CalTextViewSet, 'caltext')
 router.register(r'subjects', SubjectViewSet, 'subject')
+router.register(r'needs', NeedsViewSet, 'need')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
