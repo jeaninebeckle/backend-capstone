@@ -73,6 +73,20 @@ class NeedsViewSet(ViewSet):
       except Exception as ex:
           return Response({'message': ex.args[0]}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
+  def update(self, request, pk=None):
+      """Handle PUT requests for cal text
+
+      Returns:
+          Response -- Empty body with 204 status code
+      """
+      need = Need.objects.get(pk=pk)
+      need.item = request.data["item"]
+      need.description = request.data["description"]
+  
+      need.save()
+
+      return Response({}, status=status.HTTP_204_NO_CONTENT)
+
 class NeedSerializer(serializers.ModelSerializer):
   """JSON Serializer for needs
 
